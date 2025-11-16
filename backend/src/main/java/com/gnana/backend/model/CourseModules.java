@@ -10,19 +10,19 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Table(name = "course_module")
-public class CourseDetails {
+public class CourseModules {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int module_id;
+    @Column(name = "module_id")
+    private int moduleId;
 
-    @Column(nullable = false)
-    private int course_id;
+    @Column(name = "course_id", nullable = false)
+    private int courseId;
 
-    @Column(nullable = false)
-    private int module_number;
+    @Column(name = "module_number", nullable = false)
+    private int moduleNumber;
 
-    @Column(nullable = false)
-    private String module_title;
-
+    @Column(name = "module_title", nullable = false)
+    private String moduleTitle;
 }

@@ -140,9 +140,13 @@ button:hover {
 }
 .course-card{
   width: 280px;
-  height: 300px;
+  min-height: 300px;
   background-color: rgb(5, 5, 76);
   color: white;
   border-radius: 20px;
   padding: 20px;
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+  overflow: hidden;
 }
